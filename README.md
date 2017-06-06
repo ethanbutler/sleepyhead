@@ -31,6 +31,7 @@ If you want to take your own benchmarks, a Node script is provided in this repo.
 * Cache invalidation for non-post content (users, taxonomies, etc) is not included. This will be fixed in the next release.
 * Responses for `POST` requests are cached if URL paths/params are identical. This is not intentional and will be fixed in the next release.
 * There is some additional overhead when saving content because cache invalidation needs to run. This overhead should be minor, but it does translate into time savings for your users. There are plans to reduce this overhead in a future release.
+* An add-on that will be built as a separate release in the future will be including a GUI for the benchmarking in the WordPress admin.
 
 ## Changelog :sparkles:
 
