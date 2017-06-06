@@ -24,7 +24,11 @@ You don't want to have to worry about manually clearing your transient history w
 
 Based on current benchmarks (June 6, 2017) the plugin achieves **8-10%** time savings for default responses, and **30-75%** time savings for responses that heavily include meta values. (This is tested using the [ACF to REST API](https://wordpress.org/plugins/acf-to-rest-api/) plugin by Aires Gonçalves, as well as including 30+ meta values in responses.)
 
-If you want to take your own benchmarks, a Node script is provided in this repo. Run `npm install` to install dependencies and `npm benchmark` to run benchmark. Pass required `--endpoint=` arg to profile a particular endpoint, and optional `--count=` arg to specify iterations (default is 100).
+If you want to take your own benchmarks, a Node script is provided in this repo. Run `npm install` to install dependencies and `node profiler.js` to run benchmark. Pass required `--endpoint=` arg to profile a particular endpoint, and optional `--count=` arg to specify iterations (default is 100) e.g.
+
+```
+node profile.js --endpoint=http://mysite.dev/wp-json/wp/v2/posts --count=1000
+```
 
 ## Caveats/Future Improvements :thinking:
 * Custom endpoints registered with `register_rest_route()` might not have their caches invalidated properly. This depends on the structure of the response.
