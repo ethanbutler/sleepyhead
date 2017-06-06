@@ -8,7 +8,7 @@ For sites that use heavily-customized REST responses, this plugin will give cons
 
 ## Setup :fire:
 
-* Install the plugin by uploading a zip.
+* Put sleepyhead.php in your plugins directory – you don't need the other files in this repo unless you want to take benchmarks.
 * Activate the plugin.
 * That's it! No other configuration is necessary.
 
